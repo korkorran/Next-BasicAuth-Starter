@@ -1,7 +1,12 @@
 # Next BasicAuth Starter
 
+---
 
-_ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app). _
+🛡️This is a starter app managing Basic authentification. The app is coded in Typescript within the Next.js framework. The CSS is managed with Bulma to have a simple yet nice interface. The user session is manage with the next-iron-session utility, which is designed specially for next.js. It is simple but secure.
+
+_But Basic Authentification is not good for security ?_
+
+Actually, if your application is serve with HTTPS, you have no reasons to have security concerns. Once the user is authentified, the connexion is secured with a next-iron cookie. Then, authentification of the user is super-fast and secure.
 
 ---
 
@@ -20,11 +25,9 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-
-
 ## Deploy
+
+_This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app)._
 
 This application can be deployed on the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme). It can also be deployed locally with `npm run build & npm start` command.
 
