@@ -80,7 +80,7 @@ export default function useAuth() {
     return context
 };
 
-export function ProtectRoute(Component) {
+export function ProtectRoute(Component, ...rest) {
     return () => {
         const { isAuthenticated, loading } = useAuth();
         const router = useRouter()
@@ -89,7 +89,7 @@ export function ProtectRoute(Component) {
             if (!isAuthenticated && !loading) router.push('/log-in')
         }, [loading, isAuthenticated])
 
-        return (<Component {...arguments} />)
+        return (<Component {...rest} />)
     }
 }
 
