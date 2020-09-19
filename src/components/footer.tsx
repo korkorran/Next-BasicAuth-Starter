@@ -9,6 +9,7 @@ export default () => (
             Next BasicAuth Starter
           </a>
         </Link>
+      <p><a href="https://github.com/Fredestrik/Next-BasicAuth-Starter"><i className="fab fa-github"></i></a></p>
     </div>
   </footer>
 )

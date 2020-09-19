@@ -8,8 +8,11 @@ export default () =>{
 <nav className="navbar is-primary is-spaced" role="navigation" aria-label="main navigation">
   <div className="navbar-brand">
   <Link href="/">
-    <a className="navbar-item">
-      <h1><b>Next BasicAuth Starter</b></h1>
+    <a className="navbar-item" >
+      <h1>
+        <b> <span className="is-size-4" style={{verticalAlign:"middle"}}>🛡️</span>
+        Next BasicAuth Starter</b>
+      </h1>
     </a>
   </Link>
   </div>
