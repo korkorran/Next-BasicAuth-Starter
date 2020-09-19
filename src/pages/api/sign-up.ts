@@ -1,11 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next'
+import {SignupResponse} from '../../utils/types'
 
-type Data = {
-  response: string, 
-  register : boolean
-}
-
-export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
+export default (req: NextApiRequest, res: NextApiResponse<SignupResponse>) => {
     if (req.method === 'POST') {
       // Process a POST request
       const {email, username, password, passwordConfirm} = req.body

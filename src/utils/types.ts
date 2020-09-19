@@ -11,3 +11,8 @@ export type LoginResponse = {
     authenticated : boolean;
     user? : UserData;
   }
+
+export type SignupResponse = {
+  response: string, 
+  register : boolean
+}
