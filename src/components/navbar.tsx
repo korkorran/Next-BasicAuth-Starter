@@ -1,8 +1,13 @@
 import Link from 'next/link'
 import useAuth from "../contexts/auth"
+import {useState} from 'react'
 
 export default () =>{
   const { user, isAuthenticated, logout } = useAuth();
+  const [isClicked, setIsClicked] = useState<boolean>(false);
+  function toggleMenu() {
+    setIsClicked(!isClicked);
+  }
 
   return (
 <nav className="navbar is-primary is-spaced" role="navigation" aria-label="main navigation">
@@ -15,9 +20,20 @@ export default () =>{
       </h1>
     </a>
   </Link>
+  
+  <a 
+    role="button" 
+    className={"navbar-burger burger " + (isClicked ? "is-active" : "")} 
+    aria-label="menu" 
+    aria-expanded="false" 
+    onClick={toggleMenu}>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
   </div>
   
-  <div className="navbar-menu">
+  <div className={"navbar-menu " + (isClicked ? "is-active" : "")}>
     <div className="navbar-start">
     <Link href="/public">
     <a className="navbar-item">

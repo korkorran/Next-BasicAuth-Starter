@@ -16,6 +16,7 @@ Actually, if your application is serve with HTTPS, you have no reasons to have s
 * privates API routes are protected with the [next-iron-session](https://github.com/vvo/next-iron-session) utility. If the user is not authentified, the data from the API endpoint is not returned.
 * For the sake of simplicity, there is only one user that can be logged in. But this application is made to be extended with a user/password store to enable authentification from any registered user.
 * Also, the sign up form is not effective. It will only return errors if emails do not match / password is not long enough.
+* 📱 The design is made with [Bulma.io](https://bulma.io/) CSS and is fully responsive.
 
 ---
 
